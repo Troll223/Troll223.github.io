@@ -31,10 +31,10 @@ function addToCart(){
     for (let item_del_btn of item_del_btns){
       item_del_btn.addEventListener('click', itemDel)
     }
-    let item_del_btns = document.querySelectorAll('.del_item')
-    for (let item_del_btn of item_del_btns){
-      item_del_btn.addEventListener('click', itemDel)
-    }
+    // let item_del_btns = document.querySelectorAll('.del_item')
+    // for (let item_del_btn of item_del_btns){
+    //   item_del_btn.addEventListener('click', itemDel)
+    // }
   }
   else {
     items[i]['number'] += 1;
