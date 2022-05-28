@@ -11,31 +11,42 @@
 </head>
 <body>
 	<section class="menu">
-		<button id="basket">Корзина</button>
+		<button id="basket"><img src="img/bsk_icon.png" width="50px"></button>
 		<div class="main_bsk">
 			<h3>Корзина</h3>
 			<div class="def_bsk">
 		    	<p>Здесь пока ничего нет</p>
 	    	</div>
-	    	<button class="bsk_close" id="basket_close">X</button>
+	    	<button class="bsk_close" id="basket_close">
+				<span></span>
+				<span></span>
+			</button>
 	    </div>
 	</section>
 	<section class="catalogue">
 		
-		<h2>Католог товаров</h2>
+		<h2>Католог <span>товаров</span></h2>
 
 		<div class="cards">
 			<div class="card">
 				<h3>CyberBeer_1</h3>
-				<img src="img/beer.png" height = '282px' width="78px">
-				<button class="info_btn" data-id="1">Описание</button>
-				<button class="buyness" data-id="1" data-price='500$' data-name='Пиво1'>Добавить</button>
+				<div class="card_inner">
+					<img src="img/beer.png" height = '282px' width="78px">
+					<div class="card_interaction">
+						<button class="info_btn" data-id="1">?</button>
+						<button class="buyness" data-id="1" data-price='500$' data-name='Пиво1'>Добавить</button>
+					</div>
+				</div>
 			</div>
 			<div class="card">
 				<h3>CyberBeer_2</h3>
-				<img src="img/beer.png" height = '282px' width="78px">
-				<button class="info_btn" data-id="2">Описание</button>
-				<button class="buyness" data-id="2" data-price='300$' data-name='Пиво2'>Добавить</button>
+				<div class="card_inner">
+					<img src="img/beer.png" height = '282px' width="78px">
+					<div class="card_interaction">
+						<button class="info_btn" data-id="2">?</button>
+						<button class="buyness" data-id="2" data-price='300$' data-name='Пиво2'>Добавить</button>
+					</div>
+				</div>
 			</div>
 		</div>
 

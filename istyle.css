@@ -1,12 +1,12 @@
 body{
 	margin:  0;
 	padding: 0;
-	background-color: #0A0A0A;
+	background-color: #151718;
 	overflow-x: hidden;
 }
 
 h2{
-	color: #ebebeb;
+	color: #4e4e4e;
 	margin: 0 auto;
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
@@ -14,7 +14,7 @@ h2{
 }
 
 h3{
-	color: #ebebeb;
+	color: #b5b5b5;
 	margin: 0 auto;
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
@@ -22,7 +22,7 @@ h3{
 }
 
 p{
-  color: black;
+  color: #4e4e4e;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   margin: 0;
@@ -39,6 +39,16 @@ li{
 	position: fixed;
 }
 
+.menu button:first-child{
+	background-color: inherit;
+	border: none;
+	padding: 0;
+}
+
+.menu button img{
+	filter: contrast(0.5) hue-rotate(170deg);
+}
+
 .bsk_close{
 	display: flex;
 	align-items: center;
@@ -49,7 +59,7 @@ li{
   
 
 .main_bsk h3{
-	color: #0A0A0A;
+	color: #4e4e4e;
 	font-size: 25px;
 }
 
@@ -71,7 +81,7 @@ li{
 	align-items: center;
 	justify-content: space-around;
 	position: fixed;
-	background-color: #ebebeb;
+	background-color: #151718;
 	border-radius: 20px;
 	padding: 20px;
 	left: -100vw;
@@ -101,6 +111,31 @@ li{
   transform:translate(-50%, -50%);
 }
 
+.bsk_close{
+	border: none;
+	background-color: inherit;
+	font-weight: 300;
+	border: 2px solid #4b1c1a;
+	border-radius: 20px;
+	padding: 10px;
+}
+
+.bsk_close span:first-child{
+	position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #4b1c1a;
+    transform: rotate(-45deg)
+}
+
+.bsk_close span:last-child{
+	position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #4b1c1a;
+    transform: rotate(45deg)
+}
+
 .catalogue{
 	width: 60%;
 	min-height: 100vh;
@@ -113,6 +148,14 @@ li{
 
 .catalogue h2{
 	margin-top: 50px;
+	font-size: 30px;
+	font-weight: 400;
+	border-left: 2px solid #2e4443;
+	padding: 5px;
+}
+
+.catalogue h2 span{
+	color: #2e4443;
 }
 
 .cards{
@@ -124,34 +167,65 @@ li{
 }
 
 .card{
-	padding: 20px;
-	border: 2px solid #ebebeb;
+	background-color: rgb(35,37,38);
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin: 20px auto;
+	overflow: hidden;
+}
+
+.card_inner{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
 }
 
 .card h3{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px 0 20px 0;
 	margin-bottom: 15px;
+	background-color: #20302f;
+	width: 100%;
+	color: #d2e3db;
+}
+
+.card img{
+	filter: hue-rotate(40deg) opacity(0.5);
+}
+
+.card_interaction{
+	display: flex;
+	flex-direction: row;
 }
 
 .card button{
 	position: relative;
-	padding: 2px 30px;
-	margin-top: 15px;
-	border: 2px solid #ebebeb;
-	border-radius: 5px;
-	background: inherit;
-	color: white;
+	margin: 30px 0px 0px 5px;
+	border-radius: 7px;
+	color: #d2e3db;
 	overflow: hidden;
-	width: 100%;
+}
+
+.info_btn{
+	padding: 4px 15px!important;
+	font-weight: 700;
+	background-color: #274239;
+	border: none;
+}
+
+.buyness{
+	padding: 10px;
+	background-color: inherit;
+	border: 2px solid #274239;
 }
 
 .buyness_active{
-	background-color: rgb(193 253 196 / 26%) !important;
-	border-color: rgb(193 253 196 / 26%) !important;
+	background-color: rgb(32 48 47 / 54%) !important;
 	transition: all 0.1s ease;
 }
 
@@ -214,7 +288,7 @@ li{
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background: rgb(235 235 235 / 57%);
+  background: rgb(0 0 0 / 57%);
   left: 0;
   bottom: 0;
 }
@@ -226,7 +300,8 @@ li{
 
 .bsk_item{
 	display: flex;
-	border: 2px solid black;
+	align-items: center;
+	background-color: #242424;
 	border-radius: 5px;
 	padding: 5px;
 }
@@ -236,14 +311,17 @@ li{
 }
 
 .del_item{
-	background-color: red;
-	border: none;
+	background-color: inherit;
+	color: #4b1c1a;
+	border: 2px solid;
 	border-radius: 5px;
 	margin-right: 10px;
+	font-weight: 900;
 
 }
 .add_item{
-	background-color: seagreen;
+	background-color: #324c3d;
+	padding: 5px 8px;
 	border: none;
 	border-radius: 5px;
 }
@@ -253,10 +331,10 @@ li{
 	justify-content: center;
 	align-items: center;
 	height: 50px;
-	background-color: rgb(235 235 235);
+	background-color: rgb(0 0 0 / 22%);
 }
 
 .footer h3{
-	color: black;
+	color: #4e4e4e;
 	font-weight: 400;
 }

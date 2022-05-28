@@ -25,7 +25,7 @@ function addToCart(){
   itm = document.querySelector('.def_bsk');
   let div = document.createElement('div');
   div.className = `bsk_item bsk_item_${i}`;
-  div.innerHTML = `<p>${items[i]['name']}, Цена: ${items[i]['price']}, Количество: ${items[i]['number']}</p><button class="del_item" data-id="${i}">Del</button><button class="add_item" data-id="${i}">Add</button>`;
+  div.innerHTML = `<p>${items[i]['name']}, Цена: ${items[i]['price']}, Количество: ${items[i]['number']}</p><button class="del_item" data-id="${i}">−</button><button class="add_item" data-id="${i}">+</button>`;
   itm.appendChild(div);
 
   let item_del_btns = document.querySelectorAll('.del_item')
