@@ -218,6 +218,15 @@ li{
 	min-height: 300px;
 }
 
+@media (max-width: 550px) and (orientation: portrait){
+	.main_info{
+		min-width: 300px;
+	}
+	.main_bsk{
+		min-width: 300px;
+	}
+}
+
 .main_info h3{
 	color:#0A0A0A;
 	font-size: 25px;
