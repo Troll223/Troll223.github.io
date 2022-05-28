@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shop</title>
+	<link rel="stylesheet" href="istyle.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<section class="menu">
+		<button id="basket"><img src="img/bsk_icon.png" width="50px"></button>
+		<div class="main_bsk">
+			<h3>Корзина</h3>
+			<div class="def_bsk">
+		    	<p>Здесь пока ничего нет</p>
+	    	</div>
+	    	<button class="bsk_close" id="basket_close">
+				<span></span>
+				<span></span>
+			</button>
+	    </div>
+	</section>
+	<section class="catalogue">
+		
+		<h2>Католог <span>товаров</span></h2>
+
+		<div class="cards">
+			<div class="card">
+				<h3>CyberBeer_1</h3>
+				<div class="card_inner">
+					<img src="img/beer.png" height = '282px' width="78px">
+					<div class="card_interaction">
+						<button class="info_btn" data-id="1">?</button>
+						<button class="buyness" data-id="1" data-price='500$' data-name='Пиво1'>Добавить</button>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<h3>CyberBeer_2</h3>
+				<div class="card_inner">
+					<img src="img/beer.png" height = '282px' width="78px">
+					<div class="card_interaction">
+						<button class="info_btn" data-id="2">?</button>
+						<button class="buyness" data-id="2" data-price='300$' data-name='Пиво2'>Добавить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="info">
+			<div class="back" id = 'back'></div>
+    		<div class = 'main_info' id = 'main_info_1'>
+				<h3>Состав: </h3>
+    			<div class="info_text">
+					<p>Вода, шпинат, сыр, огурец, лимон</p>
+					<h3 class="price">Цена: 500$</h3>
+	    		</div>
+	    		<div class="btn_info">
+	    			<button class="info_btn_back" data-id="1">
+						<span></span>
+						<span></span>
+					</button>
+	    		</div>
+    		</div>
+			<div class = 'main_info' id = 'main_info_2'>
+				<h3>Состав: </h3>
+    			<div class="info_text">
+					<p>Вода, хмель, квас, лист березы, яйцо</p>
+					<h3 class="price">Цена: 300$</h3>
+	    		</div>
+	    		<div class="btn_info">
+	    			<button class="info_btn_back" data-id="2">
+						<span></span>
+						<span></span>
+					</button>
+	    		</div>
+    		</div>
+    	</div>
+  	</section>
+	<section class="footer">
+		<h3>Создатель: Аnonymous</h3>
+	</section>
+	<script src="iscript.js"></script>
+</body>
+</html>
