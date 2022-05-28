@@ -19,7 +19,6 @@ let items = {}
 function addToCart(){
   if (Object.keys(items).length == 0){
     document.querySelector('.def_bsk').innerHTML = ""
-    alert('lol')
   }
   let i = this.dataset.id
   items[i] = {number: 1, price: this.dataset.price, name: this.dataset.name}
@@ -80,11 +79,13 @@ function Basket(){
      let infob = document.getElementById(`${document.querySelector('.main_info_on').id}`)
      infob.classList.remove('main_info_on');
      document.querySelector('.main_bsk').classList.add('main_bsk_on')
+     this.disabled = !this.disabled
   }
   else{
     document.getElementById("back").classList.add('back_on');
      document.querySelector('.main_bsk').classList.add('main_bsk_on')
      document.body.style.overflowY = 'hidden';
+     this.disabled = !this.disabled
   }
 }
 
@@ -95,6 +96,7 @@ function Basket_close(){
   document.querySelector('.main_bsk').classList.remove('main_bsk_on')
   document.getElementById("back").classList.remove('back_on');
   document.body.style.overflowY = 'visible';
+  bsk.disabled = 0
 }
 
 let info_back_btns = document.querySelectorAll('.info_btn_back')
